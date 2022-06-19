@@ -1,0 +1,15 @@
+D:\Projects\myRH-API\Api.ExternalServices\bin\Debug\net5.0\Api.ExternalServices.deps.json
+D:\Projects\myRH-API\Api.ExternalServices\bin\Debug\net5.0\Api.ExternalServices.dll
+D:\Projects\myRH-API\Api.ExternalServices\bin\Debug\net5.0\Api.ExternalServices.pdb
+D:\Projects\myRH-API\Api.ExternalServices\bin\Debug\net5.0\Api.SharedKernel.dll
+D:\Projects\myRH-API\Api.ExternalServices\bin\Debug\net5.0\Api.SharedKernel.pdb
+D:\Projects\myRH-API\Api.ExternalServices\obj\Debug\net5.0\Api.ExternalServices.csproj.AssemblyReference.cache
+D:\Projects\myRH-API\Api.ExternalServices\obj\Debug\net5.0\Api.ExternalServices.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\myRH-API\Api.ExternalServices\obj\Debug\net5.0\Api.ExternalServices.AssemblyInfoInputs.cache
+D:\Projects\myRH-API\Api.ExternalServices\obj\Debug\net5.0\Api.ExternalServices.AssemblyInfo.cs
+D:\Projects\myRH-API\Api.ExternalServices\obj\Debug\net5.0\Api.ExternalServices.csproj.CoreCompileInputs.cache
+D:\Projects\myRH-API\Api.ExternalServices\obj\Debug\net5.0\Api.ExternalServices.csproj.CopyComplete
+D:\Projects\myRH-API\Api.ExternalServices\obj\Debug\net5.0\Api.ExternalServices.dll
+D:\Projects\myRH-API\Api.ExternalServices\obj\Debug\net5.0\refint\Api.ExternalServices.dll
+D:\Projects\myRH-API\Api.ExternalServices\obj\Debug\net5.0\Api.ExternalServices.pdb
+D:\Projects\myRH-API\Api.ExternalServices\obj\Debug\net5.0\ref\Api.ExternalServices.dll

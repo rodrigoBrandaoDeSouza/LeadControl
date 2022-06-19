@@ -1,0 +1,15 @@
+D:\Projects\PHAT-Api\Api.Application\bin\Debug\netstandard2.1\Api.Application.deps.json
+D:\Projects\PHAT-Api\Api.Application\bin\Debug\netstandard2.1\Api.Application.dll
+D:\Projects\PHAT-Api\Api.Application\bin\Debug\netstandard2.1\Api.Application.pdb
+D:\Projects\PHAT-Api\Api.Application\bin\Debug\netstandard2.1\Api.Domain.dll
+D:\Projects\PHAT-Api\Api.Application\bin\Debug\netstandard2.1\Api.SharedKernel.dll
+D:\Projects\PHAT-Api\Api.Application\bin\Debug\netstandard2.1\Api.Domain.pdb
+D:\Projects\PHAT-Api\Api.Application\bin\Debug\netstandard2.1\Api.SharedKernel.pdb
+D:\Projects\PHAT-Api\Api.Application\obj\Debug\netstandard2.1\Api.Application.csproj.AssemblyReference.cache
+D:\Projects\PHAT-Api\Api.Application\obj\Debug\netstandard2.1\Api.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\PHAT-Api\Api.Application\obj\Debug\netstandard2.1\Api.Application.AssemblyInfoInputs.cache
+D:\Projects\PHAT-Api\Api.Application\obj\Debug\netstandard2.1\Api.Application.AssemblyInfo.cs
+D:\Projects\PHAT-Api\Api.Application\obj\Debug\netstandard2.1\Api.Application.csproj.CoreCompileInputs.cache
+D:\Projects\PHAT-Api\Api.Application\obj\Debug\netstandard2.1\Api.Application.dll
+D:\Projects\PHAT-Api\Api.Application\obj\Debug\netstandard2.1\Api.Application.pdb
+D:\Projects\PHAT-Api\Api.Application\obj\Debug\netstandard2.1\Api.Application.csproj.CopyComplete
