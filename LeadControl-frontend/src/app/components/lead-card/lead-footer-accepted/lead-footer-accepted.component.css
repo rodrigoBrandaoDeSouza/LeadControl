@@ -1,0 +1,10 @@
+.lead-footer-accepted-container{
+  margin: 10px !important;
+  display: flex;
+  flex-direction: row;
+}
+.lead-footer-accepted-description{
+  color:rgb(0, 0, 0);
+  font-size: large;
+  margin: 10px 10px 10px 10px;
+}

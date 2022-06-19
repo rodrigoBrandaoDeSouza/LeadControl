@@ -1,0 +1,33 @@
+.lead-footer-container{
+    margin: 10px !important;
+    display: flex;
+    flex-direction: row;
+}
+
+.lead-footer-description{
+    color:rgb(0, 0, 0);
+    font-size: large;
+    margin: 10px 10px 20px 40px;
+}
+
+.btn-footer{
+   
+}
+
+.btn-accept{
+    background-color: #7B1FA2;
+    color: #FFF;
+    font-size: large;
+    width: 100px;
+    height: 40px;
+}
+
+.btn-decline{
+    padding: 3px;
+    background-color: red;
+    color: #FFF;
+    margin-left: 8px;
+    font-size: large;
+    width: 100px;
+    height: 40px;
+}

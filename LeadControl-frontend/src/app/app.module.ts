@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule,LOCALE_ID } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,10 +11,17 @@ import { MatToolbarModule}  from '@angular/material/toolbar';
 import { MatCardModule } from '@angular/material/card';
 import { LeadHeaderComponent } from './components/lead-card/lead-header/lead-header.component';
 import { LeadBodyComponent } from './components/lead-card/lead-body/lead-body.component';
-import { LeadFooterComponent } from './components/lead-card/lead-footer/lead-footer.component';
-import { LeadContainerComponent } from './components/lead-card/lead-container/lead-container.component';
+import { LeadFooterInvitedComponent } from './components/lead-card/lead-footer-invited/lead-footer-invited.component';
+import { LeadContainerInvitedComponent } from './components/lead-card/lead-container-invited/lead-container-invited.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+
+import localept from '@angular/common/locales/pt';
+import {registerLocaleData} from '@angular/common';
+import { LeadContainerAcceptedComponent } from './components/lead-card/lead-container-accepted/lead-container-accepted.component';
+import { LeadFooterAcceptedComponent } from './components/lead-card/lead-footer-accepted/lead-footer-accepted.component';
+registerLocaleData(localept, 'pt');
+
 
 @NgModule({
   declarations: [
@@ -24,8 +31,10 @@ import { MatIconModule } from '@angular/material/icon';
     FooterComponent,
     LeadHeaderComponent,
     LeadBodyComponent,
-    LeadFooterComponent,
-    LeadContainerComponent
+    LeadFooterInvitedComponent,
+    LeadContainerInvitedComponent,
+    LeadContainerAcceptedComponent,
+    LeadFooterAcceptedComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,9 +44,9 @@ import { MatIconModule } from '@angular/material/icon';
     MatToolbarModule, 
     MatCardModule, 
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
   ],
-  providers: [],
+  providers: [{ provide: LOCALE_ID, useValue: "pt" }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

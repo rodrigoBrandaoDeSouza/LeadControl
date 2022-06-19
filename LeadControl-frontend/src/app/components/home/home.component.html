@@ -1,13 +1,12 @@
 <div class="tab-container">
     <mat-tab-group class="tab-group" mat-align-tabs="center">
         <mat-tab class="mat-tab" label="Invited">
-            <app-lead-container></app-lead-container>
-            <app-lead-container></app-lead-container>
-            <app-lead-container></app-lead-container>
-            <app-lead-container></app-lead-container>
+            <app-lead-container-invited
+            [leads]="leadsInvited"></app-lead-container-invited>
         </mat-tab>
-        <mat-tab label="Acepted">
-            <app-lead-container></app-lead-container>
+        <mat-tab label="Accepted">
+            <app-lead-container-accepted
+                [leads]="leadsAccepted"></app-lead-container-accepted>
         </mat-tab>
     </mat-tab-group>
 </div>

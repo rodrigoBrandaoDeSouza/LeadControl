@@ -1,12 +1,12 @@
 <div class="lead-header-container">
-    <div class="size-70 circle">R</div>
+    <div class="size-70 circle">{{getFirstCharacter(lead.fullName)}}</div>
     <div class="lead-header-title">
-        <span class="lead-header-title">{{fullName}}</span>
-        <span class="lead-header-date-created">January, 1:30 </span>
+        <span class="lead-header-title">{{lead.fullName}}</span>
+        <span class="lead-header-date-created">{{lead.dataCreated}}</span>
     </div>
 </div>
 <div class="location-container">
-    <span class="location-description">Panorama</span>
-    <span class="location-description">.Net Dev</span>
-    <span class="location-description">ID: 123123123</span>
+    <span class="location-description">{{lead.sudurb}}</span>
+    <span class="location-description">{{lead.Category}}</span>
+    <span class="location-description">ID: {{lead.id}}</span>
 </div>

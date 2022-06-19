@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-lead-body',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./lead-body.component.css']
 })
 export class LeadBodyComponent implements OnInit {
-
+  @Input() lead!: any;
   constructor() { }
 
   ngOnInit(): void {

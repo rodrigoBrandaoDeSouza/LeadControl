@@ -1,9 +1,0 @@
-D:\Projects\PHAT-Api\Api.SharedKernel\bin\Debug\netstandard2.1\Api.SharedKernel.deps.json
-D:\Projects\PHAT-Api\Api.SharedKernel\bin\Debug\netstandard2.1\Api.SharedKernel.dll
-D:\Projects\PHAT-Api\Api.SharedKernel\bin\Debug\netstandard2.1\Api.SharedKernel.pdb
-D:\Projects\PHAT-Api\Api.SharedKernel\obj\Debug\netstandard2.1\Api.SharedKernel.GeneratedMSBuildEditorConfig.editorconfig
-D:\Projects\PHAT-Api\Api.SharedKernel\obj\Debug\netstandard2.1\Api.SharedKernel.AssemblyInfoInputs.cache
-D:\Projects\PHAT-Api\Api.SharedKernel\obj\Debug\netstandard2.1\Api.SharedKernel.AssemblyInfo.cs
-D:\Projects\PHAT-Api\Api.SharedKernel\obj\Debug\netstandard2.1\Api.SharedKernel.csproj.CoreCompileInputs.cache
-D:\Projects\PHAT-Api\Api.SharedKernel\obj\Debug\netstandard2.1\Api.SharedKernel.dll
-D:\Projects\PHAT-Api\Api.SharedKernel\obj\Debug\netstandard2.1\Api.SharedKernel.pdb

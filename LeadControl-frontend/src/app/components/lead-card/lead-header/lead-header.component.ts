@@ -6,14 +6,15 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./lead-header.component.css']
 })
 export class LeadHeaderComponent implements OnInit {
-  
+  @Input()
+  lead!: any;
+
   constructor() { }
-
-  @Input() leads!: any[];
-
   ngOnInit(): void {
 
-    const fullName = 'Rodrigo'
   }
 
+  getFirstCharacter(word: string): string{
+    return word.substring(0,1)
+  }
 }
