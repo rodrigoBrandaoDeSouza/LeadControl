@@ -1,0 +1,7 @@
+.footer {
+    display: flex;
+    flex-direction: row-reverse;
+    color: #7B1FA2;
+    font-weight: 200;
+    font-size: 15px;
+}

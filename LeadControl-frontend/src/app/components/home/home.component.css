@@ -1,0 +1,42 @@
+mat-tab-group {
+    margin-bottom: 48px;
+    color: brown ;
+}
+
+.mat-tab{
+    overflow: hidden !important;
+}
+
+.mat-tab-body.mat-tab-body-active {
+    overflow: hidden !important;
+}
+
+.mat-tab-body-content{
+    margin: 10px !important;
+    overflow: hidden !important;
+}
+
+.mat-tab-body ng-tns-c42-1 ng-star-inserted mat-tab-body-active { 
+    overflow: none;
+}
+.mat-tab-label {
+    width: 100%;
+    background-color: #fff;
+    color: #7B1FA2;
+    font-weight: 700;
+    border: 1px solid #7B1FA2; 
+}
+
+.mat-tab-label.mat-tab-label-active {
+    font-weight: 700;
+    background-color: #7B1FA2;
+    color: #fff;
+}
+
+.tab-container{
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 4%;
+    overflow: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
