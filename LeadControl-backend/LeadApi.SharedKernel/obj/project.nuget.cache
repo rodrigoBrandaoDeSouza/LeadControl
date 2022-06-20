@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "v+jZY2R+qTYHhy8hjNMjed7RZfE2BnquQXbllG5F2m5eUzBQeW1kHbfdAYHsv8caTtWCVNGT/053l0//OA4ejQ==",
+  "success": true,
+  "projectFilePath": "D:\\Projects\\LeadControl\\LeadControl-backend\\LeadApi.SharedKernel\\LeadApi.SharedKernel.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\User\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
