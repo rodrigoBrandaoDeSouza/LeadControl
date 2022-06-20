@@ -23,7 +23,6 @@ namespace LeadApi.Application.Commands.LeadsStatus
             var leadStatus =  await CreateLeadStatusAsync(request, status);
 
             return leadStatus;
-
         }
 
         private async Task<LeadStatus> CreateLeadStatusAsync(CreateLeadStatusCommand request, Status status)

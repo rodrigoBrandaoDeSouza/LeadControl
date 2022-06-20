@@ -21,6 +21,8 @@ namespace LeadApi.Application.Commands.Leads
         {
             var lead = await CreateLeadAsync(request);
 
+            await _dbContext.SaveChangesAsync();
+
             await _dbContext.CommitTransactionAsync();
 
             return lead.Id;

@@ -4,6 +4,6 @@
     {
         public Guid Id { get; set; }
         public string Description { get; set; }
-        public LeadStatus LeadStatus { get; set; }
+        public IEnumerable<LeadStatus> LeadStatus { get; set; }
     }
 }

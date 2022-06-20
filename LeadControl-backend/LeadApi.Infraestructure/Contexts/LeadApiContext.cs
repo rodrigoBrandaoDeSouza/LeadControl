@@ -1,11 +1,13 @@
 ﻿using LeadApi.SharedKernel.Interfaces;
 using LeadAPI.Domain.Entitites;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Storage;
 
 namespace LeadApi.Infraestructure.Contexts
 {
     public class LeadApiContext : DbContext, IDbContext
     {
+        private IDbContextTransaction _dbContextTransaction;
         public LeadApiContext(DbContextOptions<LeadApiContext> options) 
             : base(options)
         {
@@ -49,13 +51,28 @@ namespace LeadApi.Infraestructure.Contexts
 
         public async Task BeginTransactionAsync()
         {
-            await Database.BeginTransactionAsync();
+            if (_dbContextTransaction == null)
+            {
+                _dbContextTransaction = await Database.BeginTransactionAsync();
+            }
         }
 
-        public Task CommitTransactionAsync()
+        public async Task CommitTransactionAsync()
         {
-            Database.CommitTransaction();
-            return Task.CompletedTask;
+            await BeginTransactionAsync();
+            try
+            {
+                await SaveChangesAsync();
+                await _dbContextTransaction.CommitAsync();
+            }
+            catch (Exception)
+            {
+                await _dbContextTransaction.RollbackAsync();
+            }
+            finally
+            {
+                _dbContextTransaction = null;
+            }
         }
 
         public Task<bool> HasChangesAsync()

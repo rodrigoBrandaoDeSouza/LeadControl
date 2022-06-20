@@ -1,4 +1,6 @@
-﻿namespace LeadAPI.Domain.Entitites
+﻿using System.Collections.Generic;
+
+namespace LeadAPI.Domain.Entitites
 {
     public class LeadStatus
     {

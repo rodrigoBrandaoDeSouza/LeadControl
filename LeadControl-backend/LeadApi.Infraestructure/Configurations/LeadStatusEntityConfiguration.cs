@@ -12,8 +12,9 @@ namespace LeadApi.Infraestructure.Configurations
 
             builder.ToTable("LeadStatus");
 
-            builder.HasOne(p => p.Lead)
-                .WithOne(s => s.LeadStatus);
+            builder.HasOne(p => p.Status)
+                .WithMany(s => s.LeadStatus)
+                .OnDelete(DeleteBehavior.NoAction);
         }
     }
 }
