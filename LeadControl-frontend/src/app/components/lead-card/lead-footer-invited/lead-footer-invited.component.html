@@ -1,7 +1,15 @@
 <div class="lead-footer-container">
     <div class="btn-footer">
-        <button class="btn-accept" mat-button color="primary">Accept</button>
-        <button class="btn-decline" mat-button color="warn">Decline</button>
+        <button 
+            class="btn-accept" 
+            mat-button color="primary"
+            (click)="ComponentAcceptEmit()"
+        >Accept</button>
+        <button 
+            class="btn-decline" 
+            mat-button color="warn"
+            (click)="ComponentDeclineEmit()"
+        >Decline</button>
     </div>
     <span class="lead-footer-description">R$ {{formatPrice(lead.price)}}</span>
 </div>

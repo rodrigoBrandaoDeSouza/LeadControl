@@ -4,6 +4,7 @@ using LeadApi.Infraestructure.Contexts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LeadApi.Infraestructure.Migrations
 {
     [DbContext(typeof(LeadApiContext))]
-    partial class LeadApiContextModelSnapshot : ModelSnapshot
+    [Migration("20220621015508_AddedDateCreatedAtLeads")]
+    partial class AddedDateCreatedAtLeads
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

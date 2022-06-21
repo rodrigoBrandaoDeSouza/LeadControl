@@ -13,8 +13,14 @@ namespace LeadApi.Application.Queries
         [JsonPropertyName("email")]
         public string Email { get; set; }
 
+        [JsonPropertyName("dateCreated")]
+        public string DateCreated { get; set; }
+
         [JsonPropertyName("phone")]
         public string Phone { get; set; }
+        
+        [JsonPropertyName("suburb")]
+        public string Suburb { get; set; }
 
         [JsonPropertyName("category")]
         public string Category { get; set; }

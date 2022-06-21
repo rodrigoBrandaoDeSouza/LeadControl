@@ -16,6 +16,9 @@ import { LeadContainerInvitedComponent } from './components/lead-card/lead-conta
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 
+import { HttpClientModule } from '@angular/common/http';
+import { LeadService } from './services/lead-service';
+
 import localept from '@angular/common/locales/pt';
 import {registerLocaleData} from '@angular/common';
 import { LeadContainerAcceptedComponent } from './components/lead-card/lead-container-accepted/lead-container-accepted.component';
@@ -45,8 +48,13 @@ registerLocaleData(localept, 'pt');
     MatCardModule, 
     MatButtonModule,
     MatIconModule,
+    HttpClientModule
   ],
-  providers: [{ provide: LOCALE_ID, useValue: "pt" }],
+  providers: [
+    { provide: LOCALE_ID, useValue: "pt" }, 
+    LeadService,
+    HttpClientModule
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

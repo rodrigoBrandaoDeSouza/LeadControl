@@ -19,6 +19,7 @@
 	    align-items: center;
     
   justify-content: center;
+  margin: 3px 5px 0px -4px;
 }
 
 
@@ -31,21 +32,22 @@
     display: block;
 }
 .lead-header-title{
-    margin-left: 1%;
-    margin-top: 3px;
+    margin-left: 5px;
+    margin-top: 8px;
     font-weight: 900;
     font-size: large;
     color:black
 }
 .lead-header-date-created{
-    margin-left: 2%;
+    margin-left: 5px;
+    margin-top: 30px !important;
     font-size: medium;
     color:dimgrey;
 }
 .lead-header-container{
     display: flex;
     flex-direction: row;
-    margin-top: 5px;
+    margin-top: 5px !important;
     margin: 10px !important;
 }
 

@@ -1,8 +1,12 @@
 <div class="lead-card" *ngFor="let lead of leads">
   <app-lead-header
-      [lead]="lead"></app-lead-header>
+      [lead]="lead">
+  </app-lead-header>
   <app-lead-body
-      [lead]="lead"></app-lead-body>
-      <app-lead-footer-accepted
-      [lead]="lead"></app-lead-footer-accepted>
+      [lead]="lead"
+  ></app-lead-body>
+  <app-lead-footer-accepted
+      [lead]="lead"
+      
+  ></app-lead-footer-accepted>
 </div>

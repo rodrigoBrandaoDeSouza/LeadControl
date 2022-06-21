@@ -17,9 +17,17 @@ namespace LeadAPI.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAll([FromBody] GetAllLeadsFilter filter)
+        public async Task<IActionResult> GetAll([FromQuery] GetAllLeadsFilter filter)
         {
             var response = await _mediator.Send(filter);
+
+            return Ok(response);
+        }
+
+        [HttpPut]
+        public async Task<IActionResult> UpdateStatus([FromBody] UpdateLeadCommand command)
+        {
+            var response = await _mediator.Send(command);
 
             return Ok(response);
         }

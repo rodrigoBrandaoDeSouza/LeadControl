@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-lead-container-invited',
@@ -6,12 +6,19 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./lead-container-invited.component.css']
 })
 export class LeadContainerInvitedComponent implements OnInit {
+  @Output() AcceptLead = new EventEmitter();
+  @Output() DeclineLead = new EventEmitter();
   @Input() leads!: any[];
-
   constructor() { }
 
-  
+  public AcceptLeadClick(leadId: any){
+    this.AcceptLead.emit(leadId)
+  }
+
+  public DeclineLeadClick(leadId: any){
+    this.DeclineLead.emit(leadId)
+  }
+
   ngOnInit(): void {
-  
   }
 }

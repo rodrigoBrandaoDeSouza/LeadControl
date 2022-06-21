@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { LeadService } from '../../services/lead-service';
 
 @Component({
   selector: 'app-home',
@@ -8,65 +9,64 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  leadsInvited: any[] = 
-  [
-    {
-      fullName: 'Rodrigo Brandão de Souza', 
-      dataCreated: '19/06/2022', 
-      sudurb: 'Panorama',
-      email: 'rodrigo@gmail.com',
-      phone: '(45) 99994-7551',
-      category: '.NET Developer', 
-      id: 123321, 
-      description: "Desenvolver um teste", 
-      price: 52.23, 
-      status:'invited'
-    }, 
-    {
-      fullName: 'Ana Lucia Dourado', 
-      dataCreated: '19/06/2022', 
-      sudurb: 'Perto dos Lagos',
-      email: 'ana@gmail.com',
-      phone: '(45) 999534139',
-      category: 'Assistente Social', 
-      id: 123321, 
-      description: "Fazer o artigo", 
-      price: 2350.00, 
-      status:'invited'
-    }
-  ]
+  leadsInvited: any[] =[]
+  leadsAccepted: any[] = []
 
-  leadsAccepted: any[] = 
-  [
-    {
-      fullName: 'Sandro Brandão da Silva', 
-      dataCreated: '19/06/2022', 
-      sudurb: 'Perto do Lago',
-      email: 'sandro@gmail.com',
-      phone: '(45) 99999999',
-      category: 'Eletrecista', 
-      id: 123321, 
-      description: "puxar um fio", 
-      price: 150.00,
-      status: 'accepted' 
-    },
-    {
-      fullName: 'Jão', 
-      dataCreated: '19/06/2022', 
-      sudurb: 'Perto da vó',
-      email: 'jao@gmail.com',
-      phone: '(45) 99999999',
-      category: 'Adm', 
-      id: 123321, 
-      description: "Proc+v", 
-      price: 110.00,
-      status: 'accepted'
-    }
-  ]
-
-  constructor() { }
-
+  constructor(private readonly leadService: LeadService) {}
+  
   ngOnInit(): void {
+    this.getLeads();
   }
 
+  public getLeads() {
+    const paramsInvited= {
+      'take':'100',
+      'page':'1',
+      'status':'invited'
+    };
+
+    this.leadService.getLeads(paramsInvited).subscribe((data) =>{
+      this.leadsInvited = data;
+    });
+
+    const paramsAccepted= {
+      'take':'100',
+      'page':'1',
+      'status':'Accepted'
+    };
+
+    this.leadService.getLeads(paramsAccepted).subscribe((data) =>{
+      this.leadsAccepted = data;      
+    });
+  }
+
+  public DeclineLeadClick(leadId: any){
+    console.log("DECLINE"+leadId);
+    const params:any = {
+      "LeadId": leadId,
+      "Status":"Declined"
+    };
+    this.leadService.updateLead(params).subscribe((data) =>{
+      console.log(data);
+    });
+    this.refresh();
+  }
+
+  public AcceptLeadClick(leadId: any)  {
+    
+    const params:any = {
+      "LeadId": leadId,
+      "Status":"Accepted"
+    };
+
+    this.leadService.updateLead(params).subscribe((data) =>{
+      console.log(data);
+    });
+
+    this.refresh(); 
+  }
+
+  refresh(): void {
+    window.location.reload();
+}
 }
